@@ -33,4 +33,4 @@ If one is willing to have people write simple expectations for what alerts _shou
 vmalert-tool unittest --files=./unittest/testdata4/test.yaml -external.label=cluster=prod
 ```
 
-These may seem minor, but if you let botched manifest get deployed, the people who _now expect to have an alert working_ are blissfully assuming they get notified of issues, will only find out when the issue has become a major one so that a human is contacting them. Therefore catching simple typos etc. is very valuable.
+These may seem minor, but if you let botched manifest get deployed, the people who _now expect to have an alert working_ are blissfully assuming they get notified of issues, will only find out when the issue has become a major one so that a human is contacting them. Therefore catching simple typos etc. is very valuable, they're more common than one might think.
