@@ -4,7 +4,7 @@ groups:
   - name: group1
     rules:
       - alert: InstanceDown
-        expr: up == 0
+        expr: up =! 0 # Invalid operator
         for: 5m
         labels:
           severity: page

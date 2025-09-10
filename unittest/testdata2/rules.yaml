@@ -10,7 +10,7 @@ groups:
           severity: page
         annotations:
           summary: "Instance {{ $labels.instance }} down"
-          description: "{{ $labels.instance }} of job {{ $labels.job }} in cluster {{ $externalLabels.cluster }} has been down for more than 5 minutes."
+          description: "{{ $labels.instance }} of job {{ $labes.job }} in cluster {{ $externalLabels.cluster }} has been down for more than 5 minutes." # Typo: $labes
       - alert: AlwaysFiring
         expr: 1
 

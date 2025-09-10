@@ -7,3 +7,10 @@
 ```sh
 vmalert-tool unittest --files=./unittest/testdata/test.yaml -external.label=cluster=prod
 ```
+
+See what issues vmalert-tool catches:
+
+```sh
+vmalert-tool unittest --files=./unittest/testdata1/test.yaml -external.label=cluster=prod
+vmalert-tool unittest --files=./unittest/testdata2/test.yaml -external.label=cluster=prod
+```
