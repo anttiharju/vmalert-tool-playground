@@ -28,7 +28,7 @@ These are things you can likely catch with https://www.conftest.dev
 
 ---
 
-testdata1-3 are issues that can be caught without having the people who define alerts define any mock data.
+testdata1-3 are issues that can be caught without having the people who define alerts ~~define any mock data~~ _this is unclear for the moment, if defining tests is required for validations, that's perfectly fine_.
 
 If one is willing to have people write simple expectations for what alerts _should_ look like, there's opportunity for much more:
 
