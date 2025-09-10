@@ -22,3 +22,15 @@ vmalert-tool unittest --files=./unittest/testdata3/test.yaml -external.label=clu
 ```
 
 These are things you can likely catch with https://www.conftest.dev
+
+---
+
+testdata1-3 are issues that can be caught without having the people who define alerts define any mock data.
+
+If one is willing to have people write simple expectations for what alerts _should_ look like, there's opportunity for much more:
+
+```sh
+vmalert-tool unittest --files=./unittest/testdata4/test.yaml -external.label=cluster=prod
+```
+
+These may seem minor, but if you let botched manifest get deployed, the people who _now expect to have an alert working_ are blissfully assuming they get notified of issues, will only find out when the issue has become a major one so that a human is contacting them. Therefore catching simple typos etc. is very valuable.
