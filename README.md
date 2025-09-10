@@ -12,6 +12,9 @@ See what issues vmalert-tool catches:
 
 ```sh
 vmalert-tool unittest --files=./unittest/testdata1/test.yaml -external.label=cluster=prod
+```
+
+```sh
 vmalert-tool unittest --files=./unittest/testdata2/test.yaml -external.label=cluster=prod
 ```
 
