@@ -14,3 +14,11 @@ See what issues vmalert-tool catches:
 vmalert-tool unittest --files=./unittest/testdata1/test.yaml -external.label=cluster=prod
 vmalert-tool unittest --files=./unittest/testdata2/test.yaml -external.label=cluster=prod
 ```
+
+See what issues vmalert-tool does not catch:
+
+```sh
+vmalert-tool unittest --files=./unittest/testdata3/test.yaml -external.label=cluster=prod
+```
+
+These are things you can likely catch with https://www.conftest.dev
